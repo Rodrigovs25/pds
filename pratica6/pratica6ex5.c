@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
 	fgets(frase, 128, stdin);
 	int i=0;
 	int asc;
-	for (i = 0; frase[x] != '\0' && frase[x] != '\n'; i++)
+	for (i = 0; frase[i] != '\0' && frase[i] != '\n'; i++)
 	{
 		asc = frase[i];
 		if (asc >= 97 && asc <= 122)

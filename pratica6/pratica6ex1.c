@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 {
 	int i=0;
 	double termo = 1;
-	double euller = termo
+	double euller = termo;
 	for (i = 1; termo > delta; i++)
 	{
 		termo = 1.0/fatorial(i);
