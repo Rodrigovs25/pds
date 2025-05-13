@@ -94,7 +94,8 @@ int main(){
 	M = alocaMatriz(n, m);
 	//pause();
 	//imprimeMatriz(M, n, m);
-	liberaMatriz(M, n, m);
+	//liberaMatriz(M, n, m);
+	liberaMatriz(M, n);
 	//pause();
 	
 	return 0;
