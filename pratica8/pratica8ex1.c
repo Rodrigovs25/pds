@@ -46,7 +46,7 @@ int zeraseq(int M[][TAM], int m, int n){
 	int M_linha[TAM][TAM], M_coluna[TAM][TAM];
 	int contx, ante;
 	int n_zeros = 0;
-	int i, j x;
+	int i, j, x;
 	
 	for(i=0; i < m; i++){
 		contx = 0;
