@@ -23,14 +23,14 @@ int main(int argc, char const *argv[])
 		numero = randInt(0, 999);
 		vetor[numero]++;
 	}
-	maior = v[0];
-	menor = v[0];
+	maior = vetor[0];
+	menor = vetor[0];
 	for (i = 0; i < 1000; i++)
 	{
 		if(vetor[i] >= maior)
 			maior = vetor[i];
 		if(vetor[i] <= menor)
-			menor = v[i];
+			menor = vetor[i];
 
 	}
 	printf("\nDiferenca eh %d", maior - menor);

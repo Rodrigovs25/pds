@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
 		{
 			for (i = 2; i < numero; ++i)
 			{
-				fib[i] = fib[i-1] + fib[i-2]
+				fib[i] = fib[i-1] + fib[i-2];
 			}
 			printf("\nA sequencia de fibonacci de %d eh %.2lf", numero, fib[numero]);
 		}
