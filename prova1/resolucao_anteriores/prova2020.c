@@ -19,12 +19,11 @@ void imprimePilhas(int p1, int p2, int p3){
 }
 
 int maiorPilha(int p1, int p2, int p3){
-	maior = 0;
 	if (p1 >= p2 && p1>=p3)
-		return p1
+		return p1;
 	if (p2 >= p1 && p2>=p3)
-		return p2
-	return p3
+		return p2;
+	return p3;
 }
 
 void imprimePilhas2(int p1, int p2, int p3){
