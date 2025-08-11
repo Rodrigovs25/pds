@@ -315,7 +315,7 @@ Xis maiorXis(int M[][MAX_TAM], int n, int i, int j){
 int lerXis(Xis *x, int n){
 	int n=0, inicio=0, auxlinha=0, auxcoluna=0, auxtam=0;
 	do{
-		scanf("%d %d %d", x.linha, x.coluna, x.tam);
+		scanf("%d %d %d", x->linha, x->coluna, x->tam);
 		inicio= x->tam%2;
 		auxtam = x->tam;
 		auxlinha = x->linha - inicio;

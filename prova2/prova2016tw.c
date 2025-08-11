@@ -48,7 +48,7 @@ float distancia(Bomber p1, Bomb p2){
 }
 
 int checkKill(Bomber *p, Bomb b){
-	float distancia = sqrt(pow(p->x - b.x, 2) + pow(p->y - b.y, 2))
+	float distancia = sqrt(pow(p->x - b.x, 2) + pow(p->y - b.y, 2));
 	if (distancia <= b.raio)
 	{
 		p->vivo = 0;
@@ -64,7 +64,7 @@ void moveBombers(Bomber p[], int n){
 	{
 		dirx = rand()%2;
 		diry = rand()%2;
-		if (p.vivo == 1)
+		if (p[i].vivo == 1)
 		{
 			if (dirx == 0)
 				p[i].x -=  rand()%MAXMOV;

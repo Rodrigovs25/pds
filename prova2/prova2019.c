@@ -14,7 +14,7 @@ float randf(){
 	return 0.01 + 0.99*(float)rand()/RAND_MAX;
 }
 
-void criaRemedio(Remedio r){
+void criaRemedio(Remedio *r){
 	r->tarja = rand()%3;
 	if(r->tarja == 0){
 		r->dose = 1 + rand()%5;

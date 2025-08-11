@@ -51,7 +51,7 @@ void afastaRuins(Video v[], int *n) {
 
 void imprimeVideo(Video v) {
 	int i;
-	printf("\n%d %d %d views: ", v.id, v.likes, v.dislikes);
+	printf("\n%d %d %d views: ", v.id, v.likes, v.ndislikes);
 	for(i=0; i<10; i++)
 		printf(" %d", v.views[i]);
 }

@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define MAXCLIENTES 50 //numero maximo de clientes
-#define MAXPRODUTOS 1000 //numero maximo de produtos diferentes que a loja vende
-#define MAXESTOQUE 3 //estoque maximo de cada produto
-#define MAXCOMPRAS 20 //numero maximo de produtos que cada cliente pode comprar
+#define MAX_CLIENTES 50 //numero maximo de clientes
+#define MAX_PRODUTOS 1000 //numero maximo de produtos diferentes que a loja vende
+#define MAX_ESTOQUE 3 //estoque maximo de cada produto
+#define MAX_COMPRAS 20 //numero maximo de produtos que cada cliente pode comprar
 
 typedef struct Produto{
 	int id;
@@ -16,7 +16,7 @@ typedef struct Produto{
 typedef struct Cliente{
 	int id;
 	int ncompras;
-	int carrinho[MAXCOMPRAS];
+	int carrinho[MAX_COMPRAS];
 } Cliente;
 
 void initCliente(Cliente *c, int cod){
@@ -26,8 +26,8 @@ void initCliente(Cliente *c, int cod){
 
 void initProduto(Produto *p, int cod){
 	p->id = cod;
-	p->estoque = rand()%MAXESTOQUE;
-	p->preco = 1.0 + (100.0 - 1.0)*rand()%RAND_MAX;
+	p->estoque = rand()%MAX_ESTOQUE;
+	p->preco = 1 + (100 - 1)*rand()%RAND_MAX;
 	//1+(rand()%100) + (rand()%100)/100.0;
 }
 
@@ -41,7 +41,7 @@ int estoqueLoja(Produto p[], int n){
 }
 
 void simulaCompras(Cliente *c, Produto p[], int nprod){//DIFICIL
-	int prod, n = rand()%MAXCOMPRAS;
+	int prod, n = rand()%MAX_COMPRAS;
 	int N = estoqueLoja(p, nprod);
 	while(N>0 && n>0){
 		prod = rand()%nprod;

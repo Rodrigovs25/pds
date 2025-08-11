@@ -8,7 +8,7 @@ typedef struct Palavra{
 	int tamanho;
 	int pali;
 	char texto[100];
-}
+} Palavra;
 
 int tamStr(char s[]){
 	int i=0, tamanho=0;
@@ -57,7 +57,7 @@ int tamMedio(Palavra p[], int n){
 	int i=0;
 	int soma=0;
 	for (i = 0; i < n; i++){
-		sum += p[i].tamanho;
+		soma += p[i].tamanho;
 	}
 	return (float)soma/n;
 }
@@ -77,7 +77,7 @@ int main(int argc, char const *argv[]){
 	float media = tamMedio(palavras, MAX_PALAVRAS);
 	for(i=0; i<MAX_PALAVRAS; i++)
 		if(palavras[i].pali && palavras[i].tamanho > media)
-			printf("\n%s (%d)", palavras[i].palavra, palavras[i].tamanho);
+			printf("\n%s (%d)", palavras[i].pali, palavras[i].tamanho);
 
 	return 0;
 }

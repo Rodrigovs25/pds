@@ -38,7 +38,7 @@ void criaDieta(int dieta[], int n){
 	for (i = 0; i < n; i++){
 		dieta[i] = 0;
 		if (randFloat(0, 1) < 0.3)
-			dieta[i] = 1+rand()5;
+			dieta[i] = 1+rand()%5;
 	}
 }
 
@@ -54,7 +54,7 @@ int AlimentoMaisPop(int dietas[][NUMALI], int m){
 	int i=0, j=0; 
 	int max_i = -1, max=0, achei = 0;
 	for (i = 0; i < NUMALI; i++){
-		achei = 0
+		achei = 0;
 		for (j = 0; j < m; j++){
 			if (dietas[i][j] != 0)
 				achei += 1;
@@ -63,7 +63,7 @@ int AlimentoMaisPop(int dietas[][NUMALI], int m){
 				max = achei;
 				max_i = i;
 		}
-		printf("\n->%d %d", i, s);
+		printf("\n->%d %d", i, max);
 	}
 	return max_i;
 }
@@ -75,13 +75,13 @@ int main(int argc, char const *argv[])
 	//cria dietas para 10 pessoas:
 	int i, diets[10][NUMALI];
 	for(i=0; i<10; i++) {
-		criaDieta(dietas[i], NUMALI);
+		criaDieta(diets[i], NUMALI);
 		//qtd de calorias:
 		printf("\nkcals de %d: ", i);
-		printf("%f\n", totalCalorias(dietas[i], menu[i], NUMALI));
+		printf("%f\n", totalCalorias(diets[i], menu, NUMALI));
 	}
 	printf("\nalimento mais usado:");
-	printf("%d\n", AlimentoMaisPop(dietas, 10));
+	printf("%d\n", AlimentoMaisPop(diets, 10));
 
 
 	return 0;
