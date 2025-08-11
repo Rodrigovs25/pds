@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 //gcc rec5.c
+//Quantidade de espaços numa frase
 
 void impAst(int n){
 	if(n==0){
