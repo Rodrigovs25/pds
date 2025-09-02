@@ -21,9 +21,5 @@ int main(int argc, char const *argv[])
 		printf("Raiz x2 = %f\n", x2);
 	}
 
-
-
-
-
 	return 0;
 }

@@ -30,7 +30,5 @@ int main(int argc, char const *argv[])
 		scanf("%d", &resp);
 	}while(resp == 1);
 
-
-
 	return 0;
 }
