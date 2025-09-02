@@ -3,7 +3,6 @@
 #include <ctype.h>
 #include <math.h>
 
-
 int main(int argc, char const *argv[])
 {
 	char sexo;
@@ -30,7 +29,6 @@ int main(int argc, char const *argv[])
 	else{
 		printf("\nVoce precisa perder %.2fKg", (peso - pideal));
 	}
-
 
 	return 0;
 }

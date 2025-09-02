@@ -17,6 +17,5 @@ int main(int argc, char const *argv[])
 	printf("O numero de divisores eh %d\n", numeroDivisores(66));
 	printf("fibonacci eh %d\n", enesimoFibonacci(8));
 
-
 	return 0;
 }
