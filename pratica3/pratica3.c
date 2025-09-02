@@ -64,6 +64,5 @@ int main(int argc, char const *argv[])
 	printf("Oi opr\n");
 	printf("parOuImpar: %d", parOuImpar(3));
 
-
 	return 0;
 }
